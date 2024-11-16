@@ -49,6 +49,8 @@ sudo apt update
 1. Clone this project in the remote VM
 ```
 git clone https://github.com/verma-kunal/AWS-Session.git
+
+create .env  vim file add below scripts as follow 
 ```
 2. Setup the following environment variables - `(.env)` file
 ```
@@ -68,5 +70,17 @@ npm run start
 ```
 
 > NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
+
+
+
+# Below is exmaple of my server & below keys are found stripe  linki = (https://dashboard.stripe.com/test/apikeys )where you found keys 
+DOMAIN= "http://localhost:3000"
+PORT=3000
+STATIC_DIR="./client"
+
+#stripe API Keys
+
+PUBLISHABLE_KEY="pk_test_51QLjT3RtOaNK4VQa8RlJjFltk6hiSWasBTUV2Xg8SVwFBBmyURfozT1B8XgMYIZsP14rtB69eFdfxSme5PLQOyM500wFv8Ftih"
+SECRET_KEY="sk_test_51QLjT3RtOaNK4VQaM4RokeEGJI2nb9tvvMLczF4VK2d0PDf5BVXcvyFdMsy14bDXCjiUSMbqK9nWSnr0JcN5suYa000YczEnKP"
 
 ### Project is deployed on AWS 🎉
